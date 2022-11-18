@@ -1,0 +1,19 @@
+.boxCardAct {
+   
+    height: auto;
+    margin: 30px;
+    display: flex;
+    font-style: italic;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    border-color: solid rgb(210, 48, 48) 2px;
+    transition: all 0.6s ease;
+    background: #e8e8e8a8;
+    box-shadow: 0.1px 0.1px 30px #cccaca, -5px 1.1px 10px #ffffff;
+} 
+.boxCardAct{
+    flex-direction: column;
+    height: fit-content;
+    width: 400px;
+}

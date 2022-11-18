@@ -1,0 +1,83 @@
+
+
+
+.BoxdeCards {
+    /* display: grid;
+    gap: 50px 350px;
+    grid-template-columns: auto auto auto;  */
+    justify-content: space-evenly;
+   
+    display: flex;
+    flex-wrap: wrap; 
+
+   
+  }
+  .HomePrincipal{
+    background-image: url("./4k.png");
+    padding-top: 0.1px;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105rem;
+    width: 100%;
+  }
+
+
+
+
+
+  
+  .buttonTop {
+    font-family: 'Verdana';
+    margin-left: 8px;
+    padding: 4px 4px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 500;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+
+   .buttonTop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .buttonTop:hover {
+    color: #dacdcd;
+   }
+   
+   .buttonTop:hover::before {
+    width: 100%;
+   }
+  .crearact{
+    color: white;
+    font-size: 1.3rem;
+    align-self: center;
+    font-style: italic;
+    
+  }
+  .veract{
+    color: white;
+    font-size: 1.3rem;
+    align-self: center;
+    font-style: italic;
+  }

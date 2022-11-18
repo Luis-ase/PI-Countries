@@ -1,0 +1,113 @@
+.paginado{
+    list-style-type: none;
+    text-align: center;
+  }
+   .numb{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+    
+  }
+  
+  .loader {
+    position: relative;
+    transform: scale(2);
+    border-radius: 50%;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  .loader::after {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    display: block;
+    border-left: 1px solid #fff;
+    content: '';
+    left: 14px;
+    border-radius: 1px;
+    top: 4px;
+    animation-duration: 1s;
+  }
+  
+  .loader::before {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    display: block;
+    border-left: 1px solid #fff;
+    content: '';
+    left: 14px;
+    border-radius: 1px;
+    top: 4px;
+    animation-duration: 40s;
+  }
+  
+  .loader::before,.loader::after {
+    transform-origin: bottom;
+    animation-name: dial;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes dial {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .buttonP {
+    
+    width: 2em;
+    height: 2em;
+    border-radius: 30em;
+    font-size: 13px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+  
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .buttonP::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .buttonP:hover {
+    color: #e8e8e8;
+   }
+   
+   .buttonP:hover::before {
+    width: 100%;
+   }
+
+
+
+
+

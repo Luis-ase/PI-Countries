@@ -1,0 +1,14 @@
+.titulo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.boxCotenedorActivi{
+    background-image: url("./5k.png");
+    padding-top: 0.1px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80rem;
+    width: 68.4rem;
+}

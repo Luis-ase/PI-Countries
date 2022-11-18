@@ -1,0 +1,94 @@
+
+.container {
+    width: 198px;
+    height: auto;
+    margin: 20px;
+    border-radius: 40px;
+    overflow: hidden;
+    border-color: solid black 2px;
+    transition: all 0.6s ease;
+    background: rgb(255 255 255 / 27%);
+   
+} .container:hover {
+        background-color: #1d1c1f95;
+        transform: translateY(-15px);
+        box-shadow: 0px 3px 30px #0000008B;
+        background-color: none;
+        transform: none;
+        box-shadow: none;
+    }
+    .flag {
+        object-fit: contain;
+        border-radius: 5%;
+        width: 200px;
+        height: 140px;
+    }
+
+    .textContainer {
+        text-align: center;
+        color: #555555;
+
+       
+
+    }
+    .countryName {
+        color: black;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+
+
+
+
+        
+    
+
+
+    .button {
+        position: relative;
+        font-size: 17px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1em ;
+        display: inline-block;
+        border-radius: 6em;
+        transition: all .3s;
+        border: none;
+        font-family: inherit;
+        font-weight: 500;
+        color: white;
+        background-color: rgb(92, 97, 133);
+       }
+       
+       .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+       }
+       
+       .button:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+       }
+       
+       .button::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+       }
+       
+       .button::after {
+        background-color: #fff;
+       }
+       
+       .button:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+       } 

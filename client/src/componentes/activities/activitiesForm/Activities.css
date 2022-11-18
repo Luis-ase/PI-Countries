@@ -1,0 +1,18 @@
+.tituloformulario{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.formxxxxxxxx{
+    background-image: url("./atucasa.png");
+    padding-top: 0.1px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.denegar{
+    color: rgba(245, 10, 10, 0.998);
+    font-size: 1.5rem;
+    align-self: center;
+}
