@@ -5,9 +5,7 @@ const axios = require("axios")
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 const { Country , Sightseeing } = require('../db');
-const { route, get } = require('../app');
-const db = require('../db');
-const {Op, where}= require('sequelize')
+const {Op}= require('sequelize')
 const router = Router();
 
 // Configurar los routers
